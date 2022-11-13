@@ -1,0 +1,28 @@
+# 以下是 mysql 配置
+mysql:
+  path: '127.0.0.1' #数据库ip自己修改
+  port: '3307' #数据库端口
+  config: 'charset=utf8mb4&parseTime=True&loc=Local' #数据库配置
+  db-name: 'db01' #数据库名字
+  username: 'root' #数据库账号
+  password: 'root' #数据库密码
+  max-idle-conns: 100
+  max-open-conns: 2000
+  log-mode: false
+
+
+# 以下是 redis 配置
+redis:
+  db: 0
+  addr: '127.0.0.1' #自己修改
+  port: '6379'
+  password: '123456'
+
+# 以下就是gin 路由监听了
+myGin:
+  port: '8989'
+  jwt: 'fuck2321'
+
+
+
+
